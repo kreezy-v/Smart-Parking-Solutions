@@ -1,0 +1,111 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;700;900&display=swap");
+
+body {
+  background-image: url("bg_1@2x.png"), url("Bg_2@2x.png");
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-size: 167px, 65%;
+  background-position: left bottom, right top; 
+  font-family: "Exo 2", sans-serif; }
+
+  .title-wrapper {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    transform: skew(0, -10deg);
+  }
+
+  .sweet-title {
+    order: 2;
+    color: #ffffff;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 0.75em;
+    text-align: center;
+    margin-bottom: 5rem;
+    text-shadow: 3px 1px 1px #fc0000, 2px 2px 1px #ffae00,
+      4px 2px 1px #cfef2b, 3px 3px 1px #fb6216, 5px 3px 1px #ffed4a,
+      4px 4px 1px #fb1616, 6px 4px 1px #ff4a4a, 5px 5px 1px #fb1616,
+      7px 5px 1px #ff4a4a, 6px 6px 1px #fb1616, 8px 6px 1px #ff4a4a,
+      7px 7px 1px #fb1616, 9px 7px 1px #ff4a4a;
+
+    span {
+      display: block;
+      font-family: "Exo 2", sans-serif;
+      position: relative;
+      font-size: 8rem;
+      &:before {
+        content: attr(data-text);
+        position: absolute;
+
+        text-shadow: 2px 2px 1px #e94a4a, -1px -1px 1px #f93636,
+          -2px 2px 1px #e94a4a, 1px -1px 1px #f736f9;
+        z-index: 1;
+      }
+    }
+  }
+
+.typing-indicator {
+    background-color: #E6E7ED;
+    width: auto;
+    border-radius: 30px;
+    padding: 10px;
+    display: table;
+    margin: 0 auto;
+    position: relative;
+    -webkit-animation: 2s bulge infinite ease-out;
+            animation: 2s bulge infinite ease-out;
+  }
+  .typing-indicator:after {
+    height: 10px;
+    width: 10px;
+    left: -10px;
+    bottom: -10px;
+  }
+  .typing-indicator span {
+    height: 10px;
+    width: 10px;
+    float: left;
+    margin: 0 1px;
+    background-color: #9E9EA1;
+    display: block;
+    border-radius: 50%;
+    opacity: 0.4;
+  }
+  .typing-indicator span:nth-of-type(1) {
+    -webkit-animation: 1s blink infinite 0.3333s;
+            animation: 1s blink infinite 0.3333s;
+  }
+  .typing-indicator span:nth-of-type(2) {
+    -webkit-animation: 1s blink infinite 0.6666s;
+            animation: 1s blink infinite 0.6666s;
+  }
+  .typing-indicator span:nth-of-type(3) {
+    -webkit-animation: 1s blink infinite 0.9999s;
+            animation: 1s blink infinite 0.9999s;
+  }
+  
+  @-webkit-keyframes blink {
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes bulge {
+    50% {
+      -webkit-transform: scale(1.05);
+              transform: scale(1.05);
+    }
+  }
+  @keyframes bulge {
+    50% {
+      -webkit-transform: scale(1.05);
+              transform: scale(1.05);
+    }
+  }
